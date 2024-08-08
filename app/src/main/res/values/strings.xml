@@ -4,4 +4,10 @@
     <string name="sloganP2">Build a world</string>
     <string name="description">Build your PC the way you like, the way you want</string>
     <string name="build">BUILD</string>
+    <string name="Q1">What will you mostly be doing with your PC?</string>
+    <string name="game">GAME</string>
+    <string name="office">OFFICE</string>
+    <string name="design">DESIGN</string>
+    <string name="mix">MIX</string>
+    <string name="next">NEXT</string>
 </resources>
