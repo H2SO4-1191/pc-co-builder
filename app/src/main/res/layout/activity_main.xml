@@ -18,7 +18,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/pc_background" />
+        app:srcCompat="@drawable/pc_background"
+        android:contentDescription="@string/backgroundDes"/>
 
     <TextView
         android:id="@+id/shadow"
@@ -69,7 +70,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/background"
-        app:srcCompat="@drawable/mylogo" />
+        app:srcCompat="@drawable/mylogo"
+        android:contentDescription="@string/logoDes"/>
 
     <TextView
         android:id="@+id/description"
@@ -89,7 +91,7 @@
         app:layout_constraintTop_toBottomOf="@+id/sloganP2" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/build"
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_marginStart="8dp"
