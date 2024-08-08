@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">Match Make</string>
+    <string name="app_name">PC CO-Builder</string>
+    <string name="sloganP1">Build a PC</string>
+    <string name="sloganP2">Build a world</string>
+    <string name="description">Build your PC the way you like, the way you want</string>
+    <string name="build">BUILD</string>
 </resources>
