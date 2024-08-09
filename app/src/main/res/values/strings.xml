@@ -11,5 +11,6 @@
     <string name="mix">MIX</string>
     <string name="next">NEXT</string>
     <string name="backgroundDes">Background image of a high end PC</string>
-    <string name="logoDes">Image of the H2SO4-1191 logo</string>
+    <string name="logoDes">Image of the H2SO4–1191 logo</string>
+    <string name="Q2">What\'s your budget for a PC?</string>
 </resources>
