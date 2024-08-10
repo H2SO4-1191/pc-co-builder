@@ -1,10 +1,8 @@
 package com.h2so4.matchmake
 import android.content.Intent
 import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity
 import com.h2so4.matchmake.databinding.ActivityMainBinding
-
-class MainActivity : AppCompatActivity() {
+class MainActivity: BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         val ui = ActivityMainBinding.inflate(layoutInflater)
