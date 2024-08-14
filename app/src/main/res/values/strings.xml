@@ -17,4 +17,6 @@
     <string name="mid">MID</string>
     <string name="high">HIGH</string>
     <string name="finish">Finish</string>
+    <string name="building">Building your dream PC…</string>
+    <string name="cancel">CANCEL</string>
 </resources>

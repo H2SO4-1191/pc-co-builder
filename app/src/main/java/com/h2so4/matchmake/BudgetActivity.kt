@@ -1,4 +1,5 @@
 package com.h2so4.matchmake
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import com.h2so4.matchmake.databinding.ActivityBudgetBinding
@@ -27,7 +28,12 @@ class BudgetActivity: BaseActivity() {
         }
         ui.finish.setOnClickListener{
             if(!ui.low.isChecked && !ui.mid.isChecked && !ui.high.isChecked) Toast.makeText(this, "Hint: Pick a budget choice first.", Toast.LENGTH_SHORT).show()
-            else Toast.makeText(this, "$purposeChoice\n$budgetChoice\n-DONE-", Toast.LENGTH_SHORT).show()
+            else{
+                val finalIntent = Intent(this, FinalActivity::class.java)
+                finalIntent.putExtra("purposeChoice", purposeChoice)
+                finalIntent.putExtra("budgetChoice", budgetChoice)
+                startActivity(finalIntent)
+            }
         }
     }
 }

@@ -3,6 +3,7 @@
     <style name="Base.Theme.MatchMake" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <item name="colorPrimary">@color/back</item>
+        <item name="colorAccent">#f72585</item>
         <item name="android:navigationBarColor">@color/back</item>
     </style>
 
