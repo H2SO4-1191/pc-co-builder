@@ -36,9 +36,14 @@ class Purpose: BaseActivity() {
         ui.next.setOnClickListener{
             if(!ui.game.isChecked && !ui.office.isChecked && !ui.design.isChecked && !ui.mix.isChecked) Toast.makeText(this, "Hint: Pick a purpose choice first.", Toast.LENGTH_SHORT).show()
             else{
-                val budgetIntent = Intent(this, BudgetActivity::class.java)
-                budgetIntent.putExtra("purposeChoice", purposeChoice)
-                startActivity(budgetIntent)
+                ui.next.animate().apply{
+                    duration = 500
+                    rotationYBy(360f)
+                }.withEndAction{
+                    val budgetIntent = Intent(this, BudgetActivity::class.java)
+                    budgetIntent.putExtra("purposeChoice", purposeChoice)
+                    startActivity(budgetIntent)
+                }.start()
             }
         }
     }

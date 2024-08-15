@@ -29,10 +29,15 @@ class BudgetActivity: BaseActivity() {
         ui.finish.setOnClickListener{
             if(!ui.low.isChecked && !ui.mid.isChecked && !ui.high.isChecked) Toast.makeText(this, "Hint: Pick a budget choice first.", Toast.LENGTH_SHORT).show()
             else{
-                val finalIntent = Intent(this, FinalActivity::class.java)
-                finalIntent.putExtra("purposeChoice", purposeChoice)
-                finalIntent.putExtra("budgetChoice", budgetChoice)
-                startActivity(finalIntent)
+                ui.finish.animate().apply{
+                    duration = 500
+                    rotationBy(360f)
+                }.withEndAction{
+                    val finalIntent = Intent(this, FinalActivity::class.java)
+                    finalIntent.putExtra("purposeChoice", purposeChoice)
+                    finalIntent.putExtra("budgetChoice", budgetChoice)
+                    startActivity(finalIntent)
+                }.start()
             }
         }
     }
