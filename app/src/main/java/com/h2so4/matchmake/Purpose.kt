@@ -10,25 +10,25 @@ class Purpose: BaseActivity() {
         val ui = ActivityPurposeBinding.inflate(layoutInflater)
         setContentView(ui.root)
         ui.game.setOnClickListener{
-            purposeChoice = ui.game.text.toString()
+            purposeChoice = "GAMING"
             ui.office.isChecked = false
             ui.design.isChecked = false
             ui.mix.isChecked = false
         }
         ui.office.setOnClickListener{
-            purposeChoice = ui.office.text.toString()
+            purposeChoice = "OFFICE WORKING"
             ui.game.isChecked = false
             ui.design.isChecked = false
             ui.mix.isChecked = false
         }
         ui.design.setOnClickListener{
-            purposeChoice = ui.design.text.toString()
+            purposeChoice = "DESIGNING"
             ui.game.isChecked = false
             ui.office.isChecked = false
             ui.mix.isChecked = false
         }
         ui.mix.setOnClickListener{
-            purposeChoice = ui.mix.text.toString()
+            purposeChoice = "MIXED PURPOSES"
             ui.game.isChecked = false
             ui.office.isChecked = false
             ui.design.isChecked = false

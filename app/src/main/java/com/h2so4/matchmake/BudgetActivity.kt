@@ -12,17 +12,17 @@ class BudgetActivity: BaseActivity() {
         setContentView(ui.root)
         purposeChoice = intent.getStringExtra("purposeChoice")!!
         ui.low.setOnClickListener{
-            budgetChoice = ui.low.text.toString()
+            budgetChoice = "LOW-END"
             ui.mid.isChecked = false
             ui.high.isChecked = false
         }
         ui.mid.setOnClickListener{
-            budgetChoice = ui.mid.text.toString()
+            budgetChoice = "MID-END"
             ui.low.isChecked = false
             ui.high.isChecked = false
         }
         ui.high.setOnClickListener{
-            budgetChoice = ui.high.text.toString()
+            budgetChoice = "HIGH-END"
             ui.low.isChecked = false
             ui.mid.isChecked = false
         }

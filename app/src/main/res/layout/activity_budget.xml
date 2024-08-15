@@ -94,17 +94,17 @@
         android:foreground="@drawable/rippleblue"
         android:paddingLeft="50dp"
         android:paddingRight="50dp"
-        android:text="@string/high"
+        android:text="@string/mid"
         android:textAlignment="center"
-        android:textOff="@string/high"
-        android:textOn="@string/high"
+        android:textOff="@string/mid"
+        android:textOn="@string/mid"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/low"
         app:layout_constraintTop_toTopOf="@+id/low"
-        tools:text="@string/high" />
+        tools:text="@string/mid" />
 
     <ToggleButton
         android:id="@+id/high"
@@ -117,16 +117,16 @@
         android:foreground="@drawable/ripple"
         android:paddingLeft="50dp"
         android:paddingRight="50dp"
-        android:text="@string/mid"
+        android:text="@string/high"
         android:textAlignment="center"
-        android:textOff="@string/mid"
-        android:textOn="@string/mid"
+        android:textOff="@string/high"
+        android:textOn="@string/high"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/mid"
-        tools:text="@string/mid" />
+        tools:text="@string/high" />
 
     <Button
         android:id="@+id/finish"
