@@ -12,7 +12,7 @@ import kotlinx.coroutines.launch
 class FinalActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        val ai = GenerativeModel("gemini-pro", "AIzaSyDGXcrHbLcJFrxOdIZzvNp-tU2cgy4b7V0")
+        val ai = GenerativeModel("gemini-pro", API_KEY)
         val ui = ActivityFinalBinding.inflate(layoutInflater)
         setContentView(ui.root)
         ui.purposeSpec.text = "*${intent.getStringExtra("purposeChoice")}*"
